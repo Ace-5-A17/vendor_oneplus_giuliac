@@ -759,6 +759,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/giuliac/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/giuliac/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/giuliac/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
+    vendor/oneplus/giuliac/proprietary/odm/etc/fusionlight_profile/fusionlight_Main_1_3.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_1_3.json \
     vendor/oneplus/giuliac/proprietary/odm/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube:$(TARGET_COPY_OUT_ODM)/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube \
     vendor/oneplus/giuliac/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/giuliac/proprietary/odm/etc/init/init.audio.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.audio.rc \
@@ -1136,6 +1137,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/giuliac/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
+    vendor.dolby.dvs-V1-ndk \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.gt24p128e2csli_s5kjn1 \
     com.qti.eeprom.irs2381c_polar \
@@ -1438,6 +1440,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.qdutils_disp@1.0 \
+    libdolbyeffect_4.1 \
+    liboplusdolbyeffect_4.1 \
     libQnnHtp.aiboost \
     libQnnHtpPrepare.aiboost \
     libQnnHtpV75Stub.aiboost \
